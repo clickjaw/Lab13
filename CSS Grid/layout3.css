@@ -2,8 +2,8 @@
     display: grid;
     justify-content: center;
     margin-top: 5vh;
-    grid-template-columns: 200px 200px 200px 200px ;
-    grid-template-rows: 60px 90px 90px 90px 60px 60px;
+    grid-template-columns: 150px 200px 200px 200px;
+    grid-template-rows: 50px 50px 250px;
     row-gap:  5px;
     column-gap: 5px;
     grid-template-areas: 
@@ -11,15 +11,16 @@
     "sidebar content";
 }
 
-.item-header{
-    grid-area: header;
+.item1{
     background-color: orange;
     text-align:center;
     color: white;
     font-weight: bold;
     font-size:32px;
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 1;
+    grid-row-start:1;
+    grid-row-end:4;
 }
 
 .item2{
@@ -29,23 +30,22 @@
     text-align: center;
     justify-content:center;
     font-weight: bold;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
 .item3{
-    grid-area:sidebar;
     background-color: green;
     justify-content: center;
     color:white;
     text-align: center;
     font-weight: bold;
     grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-end: 4;
     grid-row-start: 2;
-    grid-row-end: 5;
+    grid-row-end: 2;
 }
 .item4{
 
@@ -55,10 +55,10 @@
     text-align: center;
     font-weight: bold;
     
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 .item5{
     
@@ -68,8 +68,8 @@
     font-weight: bold;
     justify-content: center;
     
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
 }
